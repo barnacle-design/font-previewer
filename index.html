@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Type Checker</title>
+		<link rel="stylesheet" href="_base.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<section class="options">
+			<h1>Type Checker</h1>
+
+			<div class="option">
+				<label>The text</label>
+				<input type="text" name="sentence" placeholder="The quick brown fox...">
+			</div>
+
+			<div class="option">
+				<label>Font type</label>
+				<select name="font">
+					<option value="Faune">Faune</option>
+					<option value="Exo">Exo</option>
+					<option value="Montserrat">Montserrat</option>
+					<option value="Poppins">Poppins</option>
+					<option value="Prompt">Prompt</option>
+				</select>
+			</div>
+
+			<div class="option">
+				<label>Font size <span class="typesize-output">64 pixels</span></label>
+				<input type="range" name="typesize" min=10 max=200 value=64>
+			</div>
+
+			<div class="option">
+				<label>Line height <span class="lineheight">1.5</span></label>
+				<input type="range" name="lineheight" min=0.75 max=2.5 value=1.5 step=0.05>
+			</div>
+
+			<div class="option">
+				<label>Font weight <span class="fontweight">400</span></label>
+				<input type="range" name="fontweight" min=100 max=900 value=400 step=100>
+			</div>
+
+			<div class="option option-checkbox">
+				<label>Italic?</label>
+				<input type="checkbox" name="italic">
+			</div>
+
+			<div class="option">
+				<label>Colours</label>
+				<div class="colors">
+					<div style="background-color: #2a2a2a; color: #ffffff;" class="selected">a</div>
+					<div style="background-color: #ffffff; color: #2a2a2a;">b</div>
+					<div style="background-color: #63ff03; color: #2a2a2a;">c</div>
+					<div style="background-color: #ee0073; color: #ffffff;">d</div>
+				</div>
+			</div>
+
+		</section>
+
+		<textarea class="output">The quick brown dog jumps over the lazy dog</textarea>
+
+		
+		<script src="typechecker.js"></script>
+
+	</body>
+
+</html>
